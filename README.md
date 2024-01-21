@@ -4,8 +4,10 @@
 
 ## Status
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/joshknopp/joshknopp.com/main/LICENSE)
 [![Build and Deploy](https://github.com/joshknopp/joshknopp.com/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/joshknopp/joshknopp.com/actions/workflows/build-and-deploy.yml)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/joshknopp/joshknopp.com)](https://github.com/joshknopp/joshknopp.com/commits/main/)
+[![GitHub top language](https://img.shields.io/github/languages/top/joshknopp/joshknopp.com)](https://github.com/joshknopp/joshknopp.com)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/joshknopp/joshknopp.com/main/LICENSE)
 
 ## Download and Installation
 
