@@ -26,8 +26,8 @@ jobs:
 
     steps:
     - name: Display contents of dist folder
-      run: ls -R dist
-      
+      run: ls -R
+
     - name: Deploy to FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
