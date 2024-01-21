@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ${{ fromJSON('["ubuntu-latest", "self-hosted"]')[github.repository == 'github/docs-internal'] }}
 
     steps:
     - name: Checkout code
@@ -25,7 +25,7 @@ jobs:
         path: dist
 
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ${{ fromJSON('["ubuntu-latest", "self-hosted"]')[github.repository == 'github/docs-internal'] }}
 
     needs: build
 
