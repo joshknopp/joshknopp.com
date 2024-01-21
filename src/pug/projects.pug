@@ -1,0 +1,63 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Josh Knopp - Projects
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon-32.png')
+
+        include includes/css.pug
+
+    body.d-flex.flex-column.h-100.bg-light
+
+        main.flex-shrink-0
+
+            // Navigation
+            include includes/navbar.pug
+
+            // Projects Section
+            section.py-5
+                .container.px-5.mb-5
+                    .text-center.mb-5
+                        h1.display-5.fw-bolder.mb-0
+                            span.text-gradient.d-inline Projects
+                    .row.gx-5.justify-content-center
+
+                        .col-lg-11.col-xl-9.col-xxl-8
+
+                            // Project Card 1
+                            a(href="https://joshknopp.com/lol").card.overflow-hidden.shadow.rounded-4.border-0.mb-5.text-reset.text-decoration-none
+                                .container.card-body.p-5
+                                    .row.d-flex.align-items-center
+                                        .col.py-0
+                                            h2.fw-bolder LOL Instant Messenger
+                                            p Welcome back to the era of dial-up modems and exquisite fashion sense! Chat with a whole new (old?) crop of BFFs from the 90s.
+                                        img.img-fluid.py-0.col-md-5(src='assets/LOL_IM.svg', alt='LOL Instant Messenger')
+
+                            // Project Card 2
+                            a(href="https://chazgeppetto.com/").card.overflow-hidden.shadow.rounded-4.border-0.text-reset.text-decoration-none
+                                .container.card-body.p-5
+                                    .row.d-flex.align-items-center
+                                        .col.py-0
+                                            h2.fw-bolder Chaz Geppetto
+                                            p My AI sidekick's very own corner of the web. Part junior developer, part blogger, 100% LLM-driven, Chaz is pretty darn charming, for a robot. Chaz and I write about our web adventures and discuss how we approach solving a wide range of unexpected technical challenges.
+                                        img.img-fluid.py-0.col-md-5(src='assets/chazgeppetto.jpg', alt='Chaz Geppetto')
+
+            // Call to action section
+            section.py-5.bg-gradient-primary-to-secondary.text-white
+                .container.px-5.my-5
+                    .text-center
+                        h2.display-4.fw-bolder.mb-4 Let's build something amazing!
+                        a.btn.btn-outline-light.btn-lg.px-5.py-3.fs-6.fw-bolder(href='https://www.linkedin.com/in/josh-knopp/') Connect on LinkedIn
+
+        // Footer
+        include includes/footer.pug
+
+        include includes/scripts.pug
