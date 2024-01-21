@@ -5,7 +5,7 @@
 ## Status
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/joshknopp/joshknopp.com/main/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-personal.svg)](https://www.npmjs.com/package/startbootstrap-personal)
+[![Build and Deploy](https://github.com/joshknopp/joshknopp.com/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/joshknopp/joshknopp.com/actions/workflows/build-and-deploy.yml)
 
 ## Download and Installation
 
