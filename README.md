@@ -4,7 +4,7 @@
 
 ## Status
 
-![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/joshknopp/joshknopp.com)
+![GitHub package.json version (subfolder of monorepo)](https://github.com/joshknopp/joshknopp.com)
 [![Build and Deploy](https://github.com/joshknopp/joshknopp.com/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/joshknopp/joshknopp.com/actions/workflows/build-and-deploy.yml)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/joshknopp/joshknopp.com)](https://github.com/joshknopp/joshknopp.com/commits/main/)
 [![GitHub top language](https://img.shields.io/github/languages/top/joshknopp/joshknopp.com)](https://github.com/joshknopp/joshknopp.com)
