@@ -43,7 +43,7 @@ html(lang='en')
                                 .profile.bg-gradient-primary-to-secondary
                                     // TIP: For best results, use a photo with a transparent background like the demo example below
                                     // Watch a tutorial on how to do this on YouTube (link)
-                                    img.profile-img(src='assets/josh-2023.png', alt='...')
+                                    img.profile-img(src='assets/josh-2023.png', alt='Photo of Josh Knopp')
                                     .dots-1
                                         include includes/svg-dots.pug
                                     .dots-2
@@ -64,11 +64,26 @@ html(lang='en')
                                 p.lead.fw-light.mb-4 I am a Director of Technology specializing in Agile best practices.
                                 p.text-muted I lean heavily into Developer Experience, prioritizing automation wherever possible. I emphasize CI/CD maturity as a key to reducing cycle time and increasing client satisfaction. I have led teams through numerous Agile transformations for Fortune 500 enterprises.
                                 p.text-muted In my professional life as well as my spare time I enjoy exploring the rapidly expanding frontier of AI/ML. I am Microsoft Certified for Azure AI, and I am fascinated by the potential for disruptive innovation.
+                                hr
                                 .d-flex.justify-content-center.fs-2.gap-4
-                                    a.text-gradient(href="https://www.linkedin.com/in/josh-knopp/") 
-                                        i.bi.bi-linkedin
-                                    a.text-gradient(href="https://github.com/joshknopp") 
-                                        i.bi.bi-github
+                                    a(href="https://learn.microsoft.com/en-us/users/joshknopp/credentials/a416496373b35948") 
+                                        img.certification-logo(src='assets/logos/mai.svg', alt='Microsoft Certified, Azure AI Fundamentals')
+                                    a(href="https://www.credly.com/badges/6ed3282b-6b9a-4687-8d9d-c6998db0dacc") 
+                                        img.certification-logo(src='assets/logos/sp.png', alt='SAFe 4 Certified Practitioner')
+                                    a(href="https://www.credly.com/badges/c36f00cc-19b6-478c-be3a-fef36fdeb1ff") 
+                                        img.certification-logo(src='assets/logos/ssm.png', alt='SAFe 4 Certified Scrum Master')
+                                    a(href="https://www.credly.com/badges/3fe69a6a-e965-4467-8aae-21fab1d51d30") 
+                                        img.certification-logo(src='assets/logos/sa.png', alt='SAFe 4 Certified Agilist')
+                                    a(href="https://www.credly.com/badges/4653984e-f6f3-4989-b8dd-9cc6cdffb6be") 
+                                        img.certification-logo(src='assets/logos/popm.png', alt='SAFe 4 Certified Product Owner/Product Manager')
+                                    a(href="https://www.credly.com/badges/6b34d95a-14e4-4028-85d2-cfcb583fbf4b") 
+                                        img.certification-logo(src='assets/logos/sdp.png', alt='SAFe 4 DevOps Practitioner')
+                                    a(href="https://www.credly.com/badges/7090182f-7665-46d5-ac8e-9d52e1069610") 
+                                        img.certification-logo(src='assets/logos/oca.png', alt='Oracle Certified Associate, Java SE 7 Programmer')
+                                    a(href="/assets/Resume-Josh-Knopp-Mar-2024.pdf#page=3") 
+                                        img.certification-logo(src='assets/logos/oca.png', alt='Oracle Certified Associate, MySQL 5')
+                                    a(href="/assets/Resume-Josh-Knopp-Mar-2024.pdf#page=3") 
+                                        img.certification-logo(src='assets/logos/kendo-ui.png', alt='Kendo UI Certified')
 
         // Footer
         include includes/footer.pug
