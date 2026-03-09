@@ -1,46 +1,36 @@
-name: Build and Deploy
+name: Build Check
 
 on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build:
-    runs-on: ${{ fromJSON('["ubuntu-latest", "self-hosted"]')[github.repository == 'github/docs-internal'] }}
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
 
     - name: Install dependencies
-      run: npm install
+      run: npm ci # 'ci' is faster and more strict than 'install' for runners
 
     - name: Build
       run: npm run build
 
-    - uses: actions/upload-artifact@v4
+    - name: Archive Build Artifact
+      uses: actions/upload-artifact@v4
       with:
-        name: app-build
-        path: dist
-
-  deploy:
-    runs-on: ${{ fromJSON('["ubuntu-latest", "self-hosted"]')[github.repository == 'github/docs-internal'] }}
-
-    needs: build
-
-    steps:
-    - name: Download build artifacts
-      uses: actions/download-artifact@v4
-      with:
-        name: app-build
-    - run: ls -R
-    
-    - name: Deploy to FTP
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./
-        server-dir: /wwwroot/
+        name: portfolio-dist
+        path: dist/
+        retention-days: 7 # Keeps it for a week so it doesn't clutter storage
